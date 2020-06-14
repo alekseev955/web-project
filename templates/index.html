@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Форма опроса</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>Форма первичного опроса клиента</h1>
+				<p>Собираем базовую информацию о посетителе учреждения</p>
+			</header>
+            <form action="{{ url_for('handle_data') }}" method="post">
+				<input type="text" name="FIO" id="FIO" placeholder="Введите ваше ФИО: "/>
+				<input type="text" name="DOB" id="DOB" placeholder="Введите дату вашего рождения:"/>
+				<input type="text" name="POL" id="POL" placeholder="Укажите ваш пол, мало ли"/>
+				<input type="submit" value="Сформировать анкету" />
+			</form>
+		<!-- Footer -->
+			<footer id="footer">
+			</footer>
+	</body>
+</html>
